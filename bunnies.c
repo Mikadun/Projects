@@ -16,7 +16,31 @@ bool used[MAX_SIZE + 2][MAX_SIZE + 2];
 Coord bunny[MAX_SIZE * MAX_SIZE];
 int way_len = 0;
 
-int heap[MAX_SIZE * MAX_SIZE];
+typedef struct {
+	Coord value;
+	int key;
+} Cell;
+
+Cell heap[MAX_SIZE * MAX_SIZE];
+int heap_size = 0;
+
+void swap(Cell *a, Cell *b){
+    Cell temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void sift_up(int idx){
+	heap->size++;
+	while(heap[idx].key < heap[(idx - 1) / 2].key){
+		swap(heap[idx], heap[(idx - 1) / 2]);
+		idx = (idx - 1) / 2;
+	}
+}
+
+void insert(int priority, Coord value){
+	
+}
 
 void dfs(Coord pos, int step){
     int i;
@@ -33,20 +57,19 @@ void dfs(Coord pos, int step){
 	}
 }
 
-void priority_bfs(Coord pos, int step){
-	if(used[pos.x][pos.y]) return;
+void idx_bfs(Coord pos, int step){
 	used[pos.x][pos.y] = true;
 	int i;
 	for(i = 0; i < MOVES_COUNT; i++){
 		Coord new_pos;
 		new_pos.x = pos.x + moves[i].x;
 		new_pos.y = pos.y + moves[i].y;
-		int weight = MAX(map[new_pos.x][new_pos.y], step + 1);
-		if(weight < way_len && used[]){
-			insert(MAX(map[new_pos.x][new_pos.y], step + 1), new_pos);
+		int height = MAX(map[new_pos.x][new_pos.y], step + 1);
+		if(height < way_len && !used[new_pos.x][new_pos.y]){
+			insert(height, new_pos);
 		}
 	}
-
+	idx_bfs(extract_min(), step + 1);
 }
 
 int main(){
@@ -65,6 +88,6 @@ int main(){
 		printf("(%d, %d: %d) ", bunny[i].x, bunny[i].y, map[bunny[i].x][bunny[i].y]);
 	}
 	// Don't forget to clear used[] 
-	// priority_bfs({1, 1}, 0);
+	// idx_bfs({1, 1}, 0);
 	return 0;
 }
