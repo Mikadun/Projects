@@ -41,7 +41,8 @@ void priority_bfs(Coord pos, int step){
 		Coord new_pos;
 		new_pos.x = pos.x + moves[i].x;
 		new_pos.y = pos.y + moves[i].y;
-		if(MAX(map[new_pos.x][new_pos.y], step + 1) < way_len){
+		int weight = MAX(map[new_pos.x][new_pos.y], step + 1);
+		if(weight < way_len && used[]){
 			insert(MAX(map[new_pos.x][new_pos.y], step + 1), new_pos);
 		}
 	}
@@ -63,5 +64,7 @@ int main(){
 	for(i = 0; i < way_len; i++){
 		printf("(%d, %d: %d) ", bunny[i].x, bunny[i].y, map[bunny[i].x][bunny[i].y]);
 	}
+	// Don't forget to clear used[] 
+	// priority_bfs({1, 1}, 0);
 	return 0;
 }
