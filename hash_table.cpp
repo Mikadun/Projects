@@ -46,24 +46,24 @@ int add_hash(List *h, key_type key, value_type value){
     p->next = temp;
 }
 
-List* search_hash(List *h, key_type key, value_type value){
+List* search_hash(List *h, key_type key){
     int index = hash_function(key);
     List *p = &h[index];
     while(p->next != NULL){
         p = p->next;
-        if(p->value == value){
+        if(p->key == key){
             return p; // Found
         }
     }
     return NULL; // Not found
 }
 
-int delete_hash(List *h, key_type key, value_type value){
+int delete_hash(List *h, key_type key){
     int index = hash_function(key);
     List *p = &h[index];
     while(p->next != NULL){
         List *temp = p->next;
-        if(temp->value == value){
+        if(temp->key == key){
             p->next = temp->next;
             delete temp;
             return 0; // Successful
