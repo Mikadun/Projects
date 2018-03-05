@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 
-
 using namespace std;
 
 const int max_len = 255;
@@ -17,7 +16,7 @@ struct List {
 
 List *hash_table = new List[max_len]; // new sets next pointers to zero. It's rly good
 
-int hash_function(string key){
+int hash_function(key_type key){
 	int hash_value = 0;
     for(int i = 0; i < key.length(); i++){
     	hash_value += (int) key[i];
@@ -35,7 +34,7 @@ int print(List *h){
 	}
 }
 
-int add_hash(List *h, string key, value_type value){
+int add_hash(List *h, key_type key, value_type value){
 	int index = hash_function(key);
 	List *p = &h[index];
 	while(p->next != NULL){
@@ -47,7 +46,7 @@ int add_hash(List *h, string key, value_type value){
     p->next = temp;
 }
 
-List* search_hash(List *h, string key, value_type value){
+List* search_hash(List *h, key_type key, value_type value){
     int index = hash_function(key);
     List *p = &h[index];
     while(p->next != NULL){
@@ -59,7 +58,7 @@ List* search_hash(List *h, string key, value_type value){
     return NULL; // Not found
 }
 
-int delete_hash(List *h, string key, value_type value){
+int delete_hash(List *h, key_type key, value_type value){
     int index = hash_function(key);
     List *p = &h[index];
     while(p->next != NULL){
