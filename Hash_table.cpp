@@ -22,6 +22,7 @@ typedef struct {
 
 Hash_cell hash_table[MAX_SIZE];
 Data* data[MAX_SIZE];
+int counter = 0;
 
 Data *data_constructor(string key, string name, vector<string> genre, string producer, int date, float duration, float rating){
 	Data *temp = new Data;
@@ -43,17 +44,18 @@ int hash_function(string key, int i){
 	return ((int) key[0] + (int) key[1] + i) % MAX_SIZE;
 }
 
-int add_hash(Data *data){
+int add_hash(Data *d){
 	int index;
 	for(int i = 0; i <= MAX_SIZE; i++){
 		if(i == MAX_SIZE)
 			return -1; // Hash table is full to add this data
-		index = hash_function(data->key, i);
+		index = hash_function(d->key, i);
 		if(is_cell_empty(index))
 			break;
 	}
-	hash_table[index].key = data->key;
-	hash_table[index].p = data;
+	data[counter++] = d;
+	hash_table[index].key = d->key;
+	hash_table[index].p = d;
 	return 0; // Successeful
 }
 
@@ -86,10 +88,24 @@ int delete_hash(string key){
 	}
 }
 
+int print_all_data(){
+	for(int i = 0; i < MAX_SIZE; i++){
+		Data *d = data[i];
+		if(d == NULL)
+			continue;
+		cout << i << ": " << d->key << " " << d->name << " ";
+		for(auto j : d->genre)
+			cout << j << " ";
+		cout << d->producer << " " << d->date << " "
+			 << d->duration << " " << d->rating << endl;
+	}
+}
+
 int main(){
     cout << hash_function("a", 0);
     vector<string> genre {"Comedy", "Fantasy"};
     Data *a = data_constructor("ks", "KonoSuba", genre, "A-1 Project", 2012, 24.0, 8.12);
-    cout << a->key << " " << a->name;
+    add_hash(a);
+    print_all_data();
 	return 0;
 }
