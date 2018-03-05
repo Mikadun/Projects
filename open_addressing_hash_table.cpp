@@ -88,24 +88,34 @@ int delete_hash(string key){
 	}
 }
 
+int print(Data *d){
+    if(d == NULL)
+        return 0;
+    cout << d->key << " " << d->name << " ";
+    for(auto j : d->genre)
+        cout << j << " ";
+    cout << d->producer << " " << d->date << " "
+         << d->duration << " " << d->rating << endl;
+}
+
 int print_all_data(){
 	for(int i = 0; i < MAX_SIZE; i++){
-		Data *d = data[i];
-		if(d == NULL)
-			continue;
-		cout << i << ": " << d->key << " " << d->name << " ";
-		for(auto j : d->genre)
-			cout << j << " ";
-		cout << d->producer << " " << d->date << " "
-			 << d->duration << " " << d->rating << endl;
+        if(data[i] != NULL){
+            cout << i << ": ";
+            print(data[i]);
+        }
 	}
 }
 
 int main(){
-    cout << hash_function("a", 0);
     vector<string> genre {"Comedy", "Fantasy"};
     Data *a = data_constructor("ks", "KonoSuba", genre, "A-1 Project", 2012, 24.0, 8.12);
     add_hash(a);
+    genre = {"Horror"};
+    a = data_constructor("lr", "It", genre, "Sunrise", 2008, 154.0, 0.2);
+    add_hash(a);
     print_all_data();
+    print(search_hash("ks"));
+    print(search_hash("lr"));
 	return 0;
 }
