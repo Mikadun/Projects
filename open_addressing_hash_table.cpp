@@ -24,6 +24,8 @@ Hash_cell hash_table[MAX_SIZE];
 Data* data[MAX_SIZE];
 int counter = 0;
 
+Data *deleted;
+
 Data *data_constructor(string key, string name, vector<string> genre, string producer, int date, float duration, float rating){
 	Data *temp = new Data;
 	temp->key = key;
@@ -37,11 +39,21 @@ Data *data_constructor(string key, string name, vector<string> genre, string pro
 }
 
 int is_cell_empty(int index){
-	return hash_table[index].p == NULL;
+	return hash_table[index].p == NULL or hash_table[index].p == deleted;
 }
 
 int hash_function(string key, int i){
 	return ((int) key[0] + (int) key[1] + i) % MAX_SIZE;
+}
+
+int add_data(Data *d){
+	counter++;
+	while(data[counter] != NULL){
+		counter++;
+		if(counter == MAX_SIZE) // Set up counter to begin for searching free space
+			counter = 0;
+	}
+	data[counter] = d;
 }
 
 int add_hash(Data *d){
@@ -53,7 +65,7 @@ int add_hash(Data *d){
 		if(is_cell_empty(index))
 			break;
 	}
-	data[counter++] = d;
+	add_data(d);
 	hash_table[index].key = d->key;
 	hash_table[index].p = d;
 	return 0; // Successeful
@@ -81,17 +93,15 @@ int delete_hash(string key){
 		if(is_cell_empty(index))
 			return -1; // Not found
 		if(hash_table[index].key == key){
-			;
-			// Do we delete from data table too or hash table only?
-			// Expected only hash table delete
+			hash_table[index].p = deleted;
 		}
 	}
 }
 
-int print(Data *d){
+int print_data(Data *d){
     if(d == NULL)
         return 0;
-    cout << d->key << " " << d->name << " ";
+    cout << "key: " << d->key << " " << d->name << " ";
     for(auto j : d->genre)
         cout << j << " ";
     cout << d->producer << " " << d->date << " "
@@ -102,9 +112,17 @@ int print_all_data(){
 	for(int i = 0; i < MAX_SIZE; i++){
         if(data[i] != NULL){
             cout << i << ": ";
-            print(data[i]);
+            print_data(data[i]);
         }
 	}
+}
+
+int print_hash(){
+    for(int i = 0; i < MAX_SIZE; i++){
+        if(hash_table[i].p != NULL or hash_table[i].p != deleted){
+            cout << i << ": " << hash_table[i].key << endl;
+        }
+    }
 }
 
 int main(){
@@ -114,8 +132,9 @@ int main(){
     genre = {"Horror"};
     a = data_constructor("lr", "It", genre, "Sunrise", 2008, 154.0, 0.2);
     add_hash(a);
-    print_all_data();
-    print(search_hash("ks"));
-    print(search_hash("lr"));
+    print_data(search_hash("ks"));
+    print_data(search_hash("lr"));
+    delete_hash("ks");
+    print_hash();
 	return 0;
 }
