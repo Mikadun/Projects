@@ -108,21 +108,17 @@ int print_data(Data *d){
          << d->duration << " " << d->rating << endl;
 }
 
-int print_all_data(){
-	for(int i = 0; i < MAX_SIZE; i++){
-        if(data[i] != NULL){
-            cout << i << ": ";
-            print_data(data[i]);
-        }
-	}
-}
-
 int print_hash(){
+    cout << "######################################################" << endl
+         << "###                   HASH_TABLE                   ###" << endl
+         << "######################################################" << endl;
     for(int i = 0; i < MAX_SIZE; i++){
         if(hash_table[i].p != NULL or hash_table[i].p != deleted){
-            cout << i << ": " << hash_table[i].key << endl;
+            cout << i << ": ";
+            print_data(hash_table[i].p);
         }
     }
+    cout << "######################################################" << endl << endl;
 }
 
 int main(){
@@ -132,6 +128,7 @@ int main(){
     genre = {"Horror"};
     a = data_constructor("lr", "It", genre, "Sunrise", 2008, 154.0, 0.2);
     add_hash(a);
+    print_hash();
     print_data(search_hash("ks"));
     print_data(search_hash("lr"));
     delete_hash("ks");
