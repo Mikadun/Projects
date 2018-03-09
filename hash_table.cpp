@@ -37,12 +37,10 @@ int print(List *h){
 int add_hash(List *h, key_type key, value_type value){
 	int index = hash_function(key);
 	List *p = &h[index];
-	while(p->next != NULL){
-		p = p->next;
-	}
 	List *temp = new List;
 	temp->key = key; // Key or hash_function(key) ?
 	temp->value = value;
+	temp->next = p->next;
     p->next = temp;
 }
 
@@ -76,9 +74,10 @@ int delete_hash(List *h, key_type key){
 int main(){
     //cout << "1. 'a' code is " << hash_function("a") << endl;
 	//cout << "2. summary code is 352. So 352 % 255 is " << hash_function("a .  q");
-	add_hash(hash_table, "a", 12);
-	add_hash(hash_table, "a .  q", 10);
-	delete_hash(hash_table, "a", 12);
+	add_hash(hash_table, "abc", 12);
+    add_hash(hash_table, "bac .  q", 10);
+    add_hash(hash_table, "cab .  q", 11);
+	delete_hash(hash_table, "cab .  q");
 	print(hash_table);
 	return 0;
 }
