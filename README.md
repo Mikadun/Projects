@@ -8,6 +8,7 @@
 * Поразрядная сортировка (radix sort) [[**C++**]](https://github.com/JIeHb/Projects/blob/master/radix_sort.cpp)
 ## 1 курс 2 семестр ПМИ (Б8103а). 
 ### Летняя практика
+#### [Турнир №1](https://imcs.dvfu.ru/cats/main.pl?f=contests;cid=1161857;set_contest=1;sid=7VqqomSN3OK80RMVQFDSvRbEWB3n9g) 
 * Столкновение шаров [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1162631.html?sid=7VqqomSN3OK80RMVQFDSvRbEWB3n9g) [[**C**]](https://github.com/JIeHb/Projects/blob/master/collision_of_balls.c)
 * Пеленг НЛО [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1162632.html) [[**C**]](https://github.com/JIeHb/Projects/blob/master/Unknown_flying_object.c)
 * Чебурашка и Бильярд [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1162633.html?sid=7VqqomSN3OK80RMVQFDSvRbEWB3n9g) [[**C**]](https://github.com/JIeHb/Projects/blob/master/billiards.c)
