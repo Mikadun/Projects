@@ -12,3 +12,5 @@
 * Столкновение шаров [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1162631.html?sid=7VqqomSN3OK80RMVQFDSvRbEWB3n9g) [[**C**]](https://github.com/JIeHb/Projects/blob/master/collision_of_balls.c)
 * Пеленг НЛО [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1162632.html) [[**C**]](https://github.com/JIeHb/Projects/blob/master/Unknown_flying_object.c)
 * Чебурашка и Бильярд [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1162633.html?sid=7VqqomSN3OK80RMVQFDSvRbEWB3n9g) [[**C**]](https://github.com/JIeHb/Projects/blob/master/billiards.c)
+#### [Турнир №2](https://imcs.dvfu.ru/cats/main.pl?f=contests;cid=1162949;set_contest=1;sid=7VqqomSN3OK80RMVQFDSvRbEWB3n9g)
+#### [Турнир №3](https://imcs.dvfu.ru/cats/main.pl?f=contests;cid=1167426;set_contest=1;sid=7VqqomSN3OK80RMVQFDSvRbEWB3n9g)
