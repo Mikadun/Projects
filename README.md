@@ -1,4 +1,4 @@
-## 1 курс 2 семестр МКН (Б8102)
+## 1 курс 2 семестр МКН (Б8102). 2018 год
 ### Алгоритмизация. Малыкина Ирина Анатольевна
 * Хеш-таблица с открытой адресацией [[**C++**]](https://github.com/JIeHb/Projects/blob/master/open_addressing_hash_table.cpp)
 * Матрица смежности графа в список ребер. Задача [[*№112628*]](https://informatics.mccme.ru/mod/statements/view3.php?chapterid=112628) [[**C++**]](https://github.com/JIeHb/Projects/blob/master/matrix_to_list.cpp) [[**Python**]](https://github.com/JIeHb/Projects/blob/master/matrix_to_list.py)
@@ -6,7 +6,7 @@
 ### Языки и методы программирования. Коваленко Евгений Олегович
 * Хеш-таблица с методом цепочек [[**C++**]](https://github.com/JIeHb/Projects/blob/master/hash_table.cpp)
 * Поразрядная сортировка (radix sort) [[**C++**]](https://github.com/JIeHb/Projects/blob/master/radix_sort.cpp)
-## 1 курс 2 семестр ПМИ (Б8103а). 
+## 1 курс 2 семестр ПМИ (Б8103а). 2017 год.
 ### Летняя практика
 #### [Турнир №1](https://imcs.dvfu.ru/cats/main.pl?f=problems;cid=1161857) 
 * Столкновение шаров [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1162631.html) [[**C**]](https://github.com/JIeHb/Projects/blob/master/collision_of_balls.c)
