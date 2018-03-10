@@ -18,3 +18,6 @@
 #### [Турнир №3](https://imcs.dvfu.ru/cats/main.pl?f=problems;cid=1167426)
 * C--- [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1167436.html) [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/c---.js)
 * Гистограмма [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1167435.html) [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/bar_chart.js)
+#### Проекты на JavaScript
+* Крестики-Нолики [[**JavaScript**]](https://github.com/JIeHb/Tic-tac-toe)
+* Neon Wires. Командный проект [[**JavaScript**]](https://github.com/JIeHb/Neon-Wires)
