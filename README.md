@@ -21,3 +21,6 @@
 #### Проекты на JavaScript
 * Крестики-Нолики [[**JavaScript**]](https://github.com/JIeHb/Tic-tac-toe)
 * Neon Wires. Командный проект [[**JavaScript**]](https://github.com/JIeHb/Neon-Wires)
+### Практикум на ЭВМ. Малявин Никита Сергеевич
+* WC утилита [[**C**]](https://github.com/JIeHb/Projects/blob/master/wc.c)
+* Библиотека для динамических массивов [[**C**]](https://github.com/JIeHb/Projects/blob/master/linear_sequence.c)
