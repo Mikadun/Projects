@@ -33,7 +33,7 @@ t_element get_digit(t_element element, int pos){
 t_element* radix_sort(t_element *container, int size){
 	if(size < 2)
 		return container;
-    //cout << "We are going to create temporary array" << endl;
+	//cout << "We are going to create temporary array" << endl;
 	t_element temp_container[size];
 	//cout << "But u will not see this string, sadly" << endl;
 	int radix_count[radix];
@@ -62,12 +62,12 @@ t_element* radix_sort(t_element *container, int size){
 }
 
 void print_container(t_element *container, int size){
-    for(int i = 0; i < size; i++){
-        cout << container[i] << " ";
-        if((i + 1) % 10 == 0)
-            cout << endl;
-    }
-    cout << endl;
+	for(int i = 0; i < size; i++){
+		cout << container[i] << " ";
+		if((i + 1) % 10 == 0)
+			cout << endl;
+	}
+	cout << endl;
 }
 
 int main(){
@@ -76,7 +76,7 @@ int main(){
 	t_element *arr = new t_element[test_size];
 	for(int i = 0; i < test_size; i++)
 		arr[i] = rand() % (test_digit_size - test_digit_size / radix) + test_digit_size / radix;
-    print_container(arr, test_size);
+	print_container(arr, test_size);
 	radix_sort(arr, test_size);
 	print_container(arr, test_size);
 	return 0;
