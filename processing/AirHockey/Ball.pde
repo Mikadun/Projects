@@ -10,12 +10,6 @@ class Ball {
     speed = _speed;
   }
   
-  Ball(float _x, float _y, float _r){
-    x = _x;
-    y = _y;
-    r = _r;
-  }
-  
   void show(){ // Drawing ball
     noStroke();
     fill(255);
@@ -38,13 +32,19 @@ class Ball {
   }
   
   void check_collision(){ // Check for walls
-    if(x < r || x > width - r)
+    if(x < r || x > width - r){
       v.x *= -1;
-    if(y < r || y > height - r)
+      if(x < r)
+        x = r;
+      else
+        x = width - r;
+    }
+    if(y < r || y > height - r){
       v.y *= -1;
-  }
-  
-  boolean intersect(float _x, float _y, float _r){ // Check for intersection of tw
-    return dist(x, y, _x, _y) < r + _r;
+      if(y < r)
+        y = r;
+      else
+        y = height - r;
+    }
   }
 }
