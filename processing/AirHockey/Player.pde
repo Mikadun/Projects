@@ -1,6 +1,6 @@
 
 class Player {
-  float x, y, r, px, py, speed;
+  float x, y, r, px, py, inter_x, inter_y, speed;
   Player(float _x, float _y, float _r) {
     x = _x;
     y = _y;
@@ -10,7 +10,7 @@ class Player {
   }
 
   void show() {
-    noStroke();
+    //noStroke();
     fill(255);
     float d = 2 * r;
     ellipse(x, y, d, d);
@@ -20,25 +20,28 @@ class Player {
     ellipse(x, y, 0.6*d, 0.6*d);
   }
 
-  void update(float _x, float _y) {
+  void update(float _x, float _y, Ball b) {
     x = _x;
     y = _y;
     update_speed();
+    if(is_intersect(b.x, b.y, b.r)){
+      impact(b);
+    }
   }
 
   void update_speed() {
-    speed = dist(px, py, x, y);
+    speed = 2 * dist(px, py, x, y); // Speed is distance between old cord and new
     px = x;
     py = y;
   }
   
-  boolean intersect(float _x, float _y, float _r) { // Check for intersection
+  boolean is_intersect(float _x, float _y, float _r) { // Check for intersection
     return dist(x, y, _x, _y) < r + _r;
   }
   
-  void impact(Ball b){  
-    b.v.x = map(b.x - x, -b.r, b.r, -1, 1);
-    b.v.y = map(b.y - y, -b.r, b.r, -1, 1);
-    b.speed = map(speed, 0, 2*width, 0.2, width);
+  void impact(Ball b){  // Change moving vector of ball
+    b.v.x = map(b.x - x, -b.r, b.r, -1, 1); // new vector.x is old.x - player.x
+    b.v.y = map(b.y - y, -b.r, b.r, -1, 1); // same for y
+    b.speed = map(speed, 0, 2*width, 0.3, width / 2); // ball's speed changes as player's
   }
 }
