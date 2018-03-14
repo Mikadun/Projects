@@ -1,43 +1,17 @@
 #include <iostream>
-using namespace std;
 
 struct node 
 {
 	int key;
 	node *left, *right;
-	int height;
-	node(int k) 
-	{
-		key = k;
-		left = 0;
-		right = 0;
-		height = 1;
-	}
+	node(int k) { key = k; left = right = NULL; }
 };
 
 node* find_min(node *p)
 {
 	if(p->left)
 		return find_min(p->left);
-	else if(p->right)
-		return find_min(p->right);
-	else
-	{
-		return p;
-	}
-}
-
-
-node* find_max(node *p)
-{
-	if(p->right)
-		return find_max(p->right);
-	else if(p->left)
-		return find_max(p->left);
-	else
-	{
-		return p;
-	}
+	return p;
 }
 
 node* insert(node *p, int k)
@@ -62,35 +36,27 @@ node* search(node *p, int k)
 node* remove(node *p, int k)
 {
 	if(!p) return p;
-	if(p->key == k)
+	if(k < p->key)
+		p->left = remove(p->left, k);
+	else if(k > p->key)
+		p->right = remove(p->right, k);
+	else
 	{
-		if(p->right)
+		if(!p->left)
 		{
-			node* temp = p;
-			p = find_min(p->right);
-			p->left = temp->left;
-			p->right = temp->right;
-			delete temp;
-		}
-		else if(p->left)
-		{
-			node* temp = p;
-			p = find_max(p->left);
-			p->left = temp->left;
-			p->right = temp->right;
-			delete temp;
-		}
-		else
-		{
+			node *temp = p->right;
 			delete p;
-			p = NULL;
+			return temp;
 		}
-	} else 
-	{
-		if(k < p->key)
-			p->left = remove(p->left, k);
-		else
-			p->right = remove(p->right, k);
+		else if(!p->right)
+		{
+			node *temp = p->left;
+			delete p;
+			return temp;
+		}
+		node *temp = find_min(p->right);
+		p->key = temp->key;
+		p->right = remove(p->right, p->key);
 	}
 	return p;
 }
@@ -99,7 +65,7 @@ void print(node *p){
 	if(p)
 	{
 		print(p->left);
-		cout << p->key << " ";
+		std::cout << p->key << " ";
 		print(p->right);
 	}
 }
@@ -115,6 +81,8 @@ int main()
 	root = insert(root, 15);
 	root = insert(root, 16);
 	root = insert(root, 12);
-	root = remove(root, 20);
+	root = insert(root, 5);
+	root = insert(root, 8);
+	root = remove(root, 10);
 	print(root);
 }
