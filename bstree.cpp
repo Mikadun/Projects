@@ -1,78 +1,23 @@
 #include <iostream>
+using namespace std;
 
-struct node 
+struct t_node 
 {
 	int key;
-	node *left, *right;
-	node(int k) { key = k; left = right = NULL; }
+	t_node *left, *right;
+	int height;
+	t_node(int _key) { key = _key; left = right = NULL; height = 1; }
 };
 
-node* find_min(node *p)
-{
-	if(p->left)
-		return find_min(p->left);
-	return p;
-}
-
-node* insert(node *p, int k)
-{
-	if(!p) return new node(k);
-	if(k < p->key)
-		p->left = insert(p->left, k);
-	else
-		p->right = insert(p->right, k);
-	return p;
-}
-
-node* search(node *p, int k)
-{
-	if(!p || p->key == k) return p;
-	if(k < p->key)
-		return search(p->left, k);
-	else
-		return search(p->right, k);
-}
-
-node* remove(node *p, int k)
-{
-	if(!p) return p;
-	if(k < p->key)
-		p->left = remove(p->left, k);
-	else if(k > p->key)
-		p->right = remove(p->right, k);
-	else
-	{
-		if(!p->left)
-		{
-			node *temp = p->right;
-			delete p;
-			return temp;
-		}
-		else if(!p->right)
-		{
-			node *temp = p->left;
-			delete p;
-			return temp;
-		}
-		node *temp = find_min(p->right);
-		p->key = temp->key;
-		p->right = remove(p->right, p->key);
-	}
-	return p;
-}
-
-void print(node *p){
-	if(p)
-	{
-		print(p->left);
-		std::cout << p->key << " ";
-		print(p->right);
-	}
-}
+t_node* find_min(t_node *);
+t_node* insert(t_node *, int);
+t_node* search(t_node *, int);
+t_node* remove(t_node *, int);
+void print(t_node *);
 
 int main()
 {
-	node *root = NULL;
+	t_node *root = NULL;
 	root = insert(root, 10);
 	root = insert(root, 20);
 	root = insert(root, 30);
@@ -85,4 +30,68 @@ int main()
 	root = insert(root, 8);
 	root = remove(root, 10);
 	print(root);
+}
+
+t_node* find_min(t_node *node)
+{
+	if(node->left)
+		return find_min(node->left);
+	return node;
+}
+
+t_node* insert(t_node *node, int key)
+{
+	if(node == NULL) return new t_node(key);
+	if(key < node->key)
+		node->left = insert(node->left, key);
+	else
+		node->right = insert(node->right, key);
+	return node;
+}
+
+t_node* search(t_node *node, int key)
+{
+	if(node == NULL || node->key == key) return node;
+	if(key < node->key)
+		return search(node->left, key);
+	else
+		return search(node->right, key);
+}
+
+t_node* remove(t_node *node, int key)
+{
+	if(node == NULL) return node;
+	if(key < node->key)
+		node->left = remove(node->left, key);
+	else if(key > node->key)
+		node->right = remove(node->right, key);
+	else
+	{
+		if(node->left == NULL)
+		{
+			t_node *temp = node->right;
+			delete node;
+			return temp;
+		}
+		else if(node->right == NULL)
+		{
+			t_node *temp = node->left;
+			delete node;
+			return temp;
+		}
+		t_node *temp = find_min(node->right);
+		node->key = temp->key;
+		node->right = remove(node->right, node->key);
+	}
+	return node;
+}
+
+void print(t_node *node)
+{
+	if(node)
+	{
+		print(node->left);
+		cout << node->key << " ";
+		print(node->right);
+	}
 }
