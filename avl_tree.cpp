@@ -1,6 +1,4 @@
 #include <iostream>
-using namespace std;
-
 struct t_node 
 {
 	int key;
@@ -9,6 +7,7 @@ struct t_node
 	t_node(int _key) { key = _key; left = right = NULL; height = 1; }
 };
 
+// Main tree methods
 t_node* find_min(t_node *);
 t_node* insert(t_node *, int);
 t_node* search(t_node *, int);
@@ -21,6 +20,7 @@ int height(t_node *);
 int fix_height(t_node *);
 int bfactor(t_node *);
 
+// Print tree functions
 void print(t_node *);
 void print_tree(t_node *, int);
 
@@ -46,7 +46,7 @@ void print(t_node *node)
 	if(node)
 	{
 		print(node->left);
-		cout << node->height << ": " << node->key << endl;
+		std::cout << node->height << ": " << node->key << std::endl;
 		print(node->right);
 	}
 }
@@ -55,7 +55,7 @@ void print_tree(t_node *node, int depth)
 {
 	if(node)
 	{
-		cout << depth << ": " << node->key << endl;
+		std::cout << depth << ": " << node->key << std::endl;
 		print_tree(node->left, depth + 1);
 		print_tree(node->right, depth + 1);
 	}
@@ -156,21 +156,24 @@ t_node* remove(t_node *node, int key)
 		node->right = remove(node->right, key);
 	else
 	{
-		if(node->left == NULL)
+		if(node->left == NULL || node->right == NULL)
 		{
-			t_node *temp = node->right;
-			delete node;
-			return balance(temp);
+			t_node *temp = node->left ? node->left : node->right;
+			if(temp == NULL)
+			{
+				temp = node;
+				node = NULL;
+			}
+			else
+				*node = *temp;
+			delete temp;
 		}
-		else if(node->right == NULL)
+		else
 		{
-			t_node *temp = node->left;
-			delete node;
-			return balance(temp);
+			t_node *temp = find_min(node->right);
+			node->key = temp->key;
+			node->right = remove(node->right, node->key);
 		}
-		t_node *temp = find_min(node->right);
-		node->key = temp->key;
-		node->right = remove(node->right, node->key);
 	}
 	return balance(node);
 }
