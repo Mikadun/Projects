@@ -177,9 +177,3 @@ t_node* remove(t_node *node, int key)
 	}
 	return balance(node);
 }
-
-/* Literature and other code examples
-https://www.geeksforgeeks.org/avl-tree-set-2-deletion/
-https://gist.github.com/harish-r/a7df7ce576dda35c9660
-https://gist.github.com/danicat/7075125
-*/
