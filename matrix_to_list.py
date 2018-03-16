@@ -1,4 +1,11 @@
 n = int(input())
-for j in [input().split() for _ in range(n)]:
-	res = ''.join(list(map(lambda x, i: str(i + 1) + ' ' if x == '1' else '', j, range(n))))
-	print(res if len(res) != 0 else '0')
+graph = [input().split() for _ in range(n)]
+edges = [[] for _ in range(n)]
+for i in range(n):
+  for j in range(n):
+  	if graph[i][j] != '0':
+  	  edges[i].append(j + 1)
+  if edges[i] == []:
+    edges[i] = [0]
+for i in edges:
+  print(" ".join([str(j) for j in i]))
