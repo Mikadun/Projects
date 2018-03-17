@@ -3,6 +3,8 @@ class Sort // Just parent for creating array of childs
 	int[] sort( int[] container, int size ) { return null; };
 }
 
+int[] sizes;
+
 class Manager
 {
 	Sort[] sort_algs;
@@ -28,12 +30,13 @@ class Manager
 		digit 							 = _digit;
 		int minimal_value		 = 1000;
 		int max_number_value = 1000;
-		times = new int[sort_amount][test_amount];
+		times 							 = new int[sort_amount][test_amount];
+		sizes 							 = new int[test_amount];
 		
-		// Creating samilar arrays to better result
 		for( int i = 0; i < test_amount; i++ )
 		{
 			int size = (int) Math.pow(digit, i) * minimal_value;
+			sizes[i] = size;
 			int[][] container = new int[ sort_amount ][ size ];
 			
 			for( int k = 0; k < sort_amount; k++ )
@@ -46,10 +49,5 @@ class Manager
 				times[k][i] = get_time( sort_algs[k], container[k], size );
 			}
 		}
-	}
-
-	String int_to_sec( int time )
-	{
-		return Float.toString(( float ) time / 1000) + "s";
 	}
 }
