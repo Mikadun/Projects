@@ -120,6 +120,6 @@ class Table
 
 	String int_to_sec( int time )
 	{
-		return Float.toString(( float ) time / 1000) + "s";
+		return Float.toString(( float ) time / 1000 ) + "s";
 	}
 }
