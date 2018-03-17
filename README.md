@@ -7,6 +7,8 @@
 ### Языки и методы программирования. Коваленко Евгений Олегович
 * Хеш-таблица с методом цепочек [[**C++**]](https://github.com/JIeHb/Projects/blob/master/hash_table.cpp)
 * Поразрядная сортировка (radix sort) [[**C++**]](https://github.com/JIeHb/Projects/blob/master/radix_sort.cpp)
+* Сравнение сортировок с помощью диаграммы [[**Processing**]](https://github.com/JIeHb/Projects/tree/master/processing/SortingDiagram)
+* Сбалансированное бинарное дерево поиска (AVL Tree) [[**C++**]](https://github.com/JIeHb/Projects/blob/master/avl_tree.cpp)
 ## 1 курс 2 семестр ПМИ (Б8103а). 2017 год.
 ### Летняя практика
 #### [Турнир №1](https://imcs.dvfu.ru/cats/main.pl?f=problems;cid=1161857) 
