@@ -6,7 +6,7 @@ class Table
 	{
 		cell_size 		= 25;
 		border    		= 2 * cell_size;
-		grid_pix_size = 400;
+		grid_pix_size		= 400;
 		grid_size 		= grid_pix_size / cell_size;
 		time_coef 		= 10;
 	}
