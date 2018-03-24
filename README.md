@@ -5,7 +5,7 @@
 * Список ребер графа в матрицу смежности. Задача [[*№112629*]](https://informatics.mccme.ru/mod/statements/view3.php?chapterid=112629) [[**Python**]](https://github.com/JIeHb/Projects/blob/master/list_to_matrix.py)
 * Построение минимального остовного дерева графа (MST). 
 Задача [[*№112650*]](https://informatics.mccme.ru/mod/statements/view3.php?id=11743&chapterid=112650). Алгоритм Крускала [[**Python**]](https://github.com/JIeHb/Projects/blob/master/MST.py). Алгоритм Прима [[**Python**]](https://github.com/JIeHb/Projects/blob/master/MST_Prim.py). 
-Задача [[*№1377*]](http://informatics.mccme.ru/mod/statements/view3.php?chapterid=1377#1). Алгоритм Крускала [[**C++**]](https://github.com/JIeHb/Projects/blob/master/MST_Kruskal.cpp)
+Задача [[*№1377*]](http://informatics.mccme.ru/mod/statements/view3.php?chapterid=1377#1). Алгоритм Крускала [[**C++**]](https://github.com/JIeHb/Projects/blob/master/MST_Kruskal.cpp). Алгоритм Крускала с системой непересекающихся множеств (ranked) [[**C++**]](https://github.com/JIeHb/Projects/blob/master/MST_Kruskal_DSU.cpp)
 * Транзитивное замыкание. Задача [[*№1332*]](http://informatics.mccme.ru/moodle/mod/statements/view.php?chapterid=1332#1). Алгоритм Флойда-Уоршелла [[**Python**]](https://github.com/JIeHb/Projects/blob/master/floyd_warshall.py). Алгоритм множественного обхода в ширину [[**Python**]](https://github.com/JIeHb/Projects/blob/master/transitive_closure_bfs.py). Возведение матрицы в степень [[**C++**]](https://github.com/JIeHb/Projects/blob/master/transitive_closure_matrix.cpp)
 ### Языки и методы программирования. Коваленко Евгений Олегович
 * Хеш-таблица с методом цепочек [[**C++**]](https://github.com/JIeHb/Projects/blob/master/hash_table.cpp)
