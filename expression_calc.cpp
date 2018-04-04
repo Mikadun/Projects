@@ -50,8 +50,14 @@ void push_digit( char c )
 void push_op( char c )
 {
 
-	if( !operations.empty() && operations.top() == '(' && c == '-' )
-		push_digit( '0' );
+	if( !operations.empty() && operations.top() == '(' )
+		if( c == '-' ) // For unary '-' support
+			push_digit( '0' );
+		else if( c == ')' ) // For (number) support
+		{
+			operations.pop();
+			return;
+		}
 
 	is_last_digit = false;
 
