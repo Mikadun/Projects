@@ -17,29 +17,29 @@ int get_priority( char op )
 	}
 }
 
-float calculate( float a, float b, char op )
+string calculate( float a, float b, char op )
 {
 	switch( op )
 	{
-		case '+': return a + b;
-		case '-': return a - b;
-		case '*': return a * b;
-		case '/': return a / b; // Dividing by zero
+		case '+': return to_string(a + b);
+		case '-': return to_string(a - b);
+		case '*': return to_string(a * b);
+		case '/': return to_string(a / b); // Dividing by zero
 	}
 }
 
 stack<char> operations;
-stack<float> values;
+stack<string> values;
 
 bool is_last_digit = false;
 
 void push_digit( char c )
 {
-	float value = c - '0';
+	string value(1, c);
 	if( is_last_digit )
 	{
 		// Increase last digit and delete him
-		value += values.top() * 10;
+		value = values.top() + value;
 		values.pop();
 	}
 	is_last_digit = true;
@@ -50,17 +50,17 @@ void push_digit( char c )
 void push_op( char c )
 {
 	is_last_digit = false;
-	
+
 	while( !operations.empty() && c != '(' && get_priority( c ) >= get_priority( operations.top() )) 
 		// Also check for ()
 	{
 		// Calculate last two values with last op and delete them
-		float b = values.top(); values.pop();
-		float a = values.top(); values.pop();
+		string b = values.top(); values.pop();
+		string a = values.top(); values.pop();
 		char op = operations.top(); operations.pop();
 
 		// Insert new value
-		values.push( calculate( a, b, op ) );
+		values.push( calculate( strtof( a.c_str(), NULL ), strtof( b.c_str(), NULL ), op ) );
 		if( !operations.empty() && operations.top() == '(' && c == ')' )
 		{
 			operations.pop();
@@ -74,7 +74,7 @@ void push_op( char c )
 
 void process_char( char c )
 {
-	if( isdigit(c) )
+	if( isdigit(c) || c == '.' )
 	{
 		// add to values
 		push_digit( c );
@@ -89,11 +89,11 @@ void process_char( char c )
 int main()
 {
 	// Read string and cycle it's chars with func prcocess_char
-	string expression = "1-1+2+3/(4-1)*2+1";
+	string expression = "1.25*4-(3*8/2-4)";
 	expression = '(' + expression + ')';
 	for( int i = 0; i < expression.length(); i++ )
 	{
 		process_char( expression[i] );
 	}
-	cout << values.top();
+	cout << strtof( ( values.top() ).c_str(), NULL );
 }
