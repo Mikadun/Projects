@@ -47,7 +47,7 @@ int main()
 		tree.insert(value);
 		std::cin >> value;
 	}
-	tree.print_tree();
+	tree.print_tree(FULL_NODE);
 }
 
 void t_tree::print_tree()
@@ -93,6 +93,7 @@ void t_tree::print_node(t_node *node, tree_print_type type)
 t_node* t_tree::insert_node(t_node *node, int key)
 {
 	if(node == NULL) return new t_node(key);
+	if(key == node->key) return node;
 	if(key < node->key)
 		node->left = insert_node(node->left, key);
 	else
