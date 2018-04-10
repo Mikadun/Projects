@@ -15,6 +15,7 @@ class t_tree
 	public:
 		t_tree() { _root = NULL; }
 
+		void print_tree();
 		void print_tree(tree_print_type);
 		void insert(int);
 		bool search(int);
@@ -46,10 +47,15 @@ int main()
 		tree.insert(value);
 		std::cin >> value;
 	}
-	tree.print_tree(LEAF_NODE);
+	tree.print_tree();
 }
 
-void t_tree::print_tree(tree_print_type type = STANDART)
+void t_tree::print_tree()
+{
+	print_tree(STANDART);
+}
+
+void t_tree::print_tree(tree_print_type type)
 {
 	print_node(_root, type);
 }
