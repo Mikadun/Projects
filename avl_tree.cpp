@@ -1,4 +1,5 @@
 #include <iostream>
+
 struct t_node 
 {
 	int key;
@@ -7,15 +8,18 @@ struct t_node
 	t_node(int _key) { key = _key; left = right = NULL; height = 1; }
 };
 
+enum tree_print_type { STANDART, FULL_NODE, LEAF_NODE };
+
 class t_tree 
 {
 	public:
 		t_tree() { _root = NULL; }
 
-		void print_tree(void);
+		void print_tree(tree_print_type);
 		void insert(int);
 		bool search(int);
 		void remove(int);
+
 	private:
 		t_node* _root;
 		t_node* find_min(t_node *);
@@ -29,23 +33,25 @@ class t_tree
 		int height(t_node *);
 		int fix_height(t_node *);
 		int bfactor(t_node *);
-		void print_node(t_node *);
+		void print_node(t_node *, tree_print_type);
 };
 
 int main()
 {
 	t_tree tree;
-	tree.insert(5);
-	tree.insert(1);
-	tree.insert(4);
-	tree.insert(-1);
-	tree.remove(5);
-	tree.print_tree();
+	int value;
+	std::cin >> value;
+	while(value != 0)
+	{
+		tree.insert(value);
+		std::cin >> value;
+	}
+	tree.print_tree(LEAF_NODE);
 }
 
-void t_tree::print_tree(void)
+void t_tree::print_tree(tree_print_type type = STANDART)
 {
-	print_node(_root);
+	print_node(_root, type);
 }
 
 void t_tree::insert(int key)
@@ -63,13 +69,18 @@ void t_tree::remove(int key)
 	_root = remove_node(_root, key);
 }
 
-void t_tree::print_node(t_node *node)
+void t_tree::print_node(t_node *node, tree_print_type type)
 {
 	if(node)
 	{
-		print_node(node->left);
-		std::cout << node->key << " ";
-		print_node(node->right);
+		print_node(node->left, type);
+		if(type == FULL_NODE && node->left && node->right)
+			std::cout << node->key << " ";
+		else if(type == LEAF_NODE && !node->left && !node->right)
+			std::cout << node->key << " ";
+		else if(type == STANDART)
+			std::cout << node->key << " ";
+		print_node(node->right, type);
 	}
 }
 
@@ -80,7 +91,8 @@ t_node* t_tree::insert_node(t_node *node, int key)
 		node->left = insert_node(node->left, key);
 	else
 		node->right = insert_node(node->right, key);
-	return balance(node);
+	// return balance(node);
+	return node;
 }
 
 t_node* t_tree::search_node(t_node *node, int key)
@@ -120,7 +132,8 @@ t_node* t_tree::remove_node(t_node *node, int key)
 			node->right = remove_node(node->right, node->key);
 		}
 	}
-	return balance(node);
+	//return balance(node);
+	return node;
 }
 
 

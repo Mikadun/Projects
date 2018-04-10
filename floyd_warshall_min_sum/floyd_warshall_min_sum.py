@@ -12,7 +12,7 @@ for i in range(n):
 for k in range(n):
 	for i in range(n):
 		for j in range(n):
-				g[i][j] = min(g[i][j], g[i][k] + g[k][j])
+			g[i][j] = min(g[i][j], g[i][k] + g[k][j])
 				
 min_idx = 0
 min_sum = inf
@@ -23,7 +23,7 @@ for i in range(n):
 
 	# cur_sum = sum( g[i][j] * students[j] ) for j in range(n)
 	cur_sum = sum(list(map(lambda x, y: x * y, students, g[i])))
-	
+
 	if cur_sum < min_sum:
 		min_idx = i
 		min_sum = cur_sum
