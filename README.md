@@ -10,7 +10,7 @@
 * Кратчайшие пути с отрицательными циклами. Задача [[*№2598*]](http://informatics.mccme.ru/mod/statements/view3.php?chapterid=2598#1). [[**C++**]](https://github.com/JIeHb/Projects/blob/master/Pink_Floyd.cpp)
 * Алгоритм Дейкстры [[**Python**]](https://github.com/JIeHb/Projects/blob/master/dijkstra/dijkstra.py)
 * Минимальная сумма весов от одной вершины к другим с учетом коэффициентов веса [[**Python**]](https://github.com/JIeHb/Projects/blob/master/floyd_warshall_min_sum/floyd_warshall_min_sum.py)
-### Языки и методы программирования. Коваленко Евгений Олегович
+### Языки и методы программирования. Коваленко Евгений Олегович. [[Материалы]](https://hackmd.io/s/B1zCbjLOz)
 * Хеш-таблица с методом цепочек [[**C++**]](https://github.com/JIeHb/Projects/blob/master/hash_table.cpp)
 * Поразрядная сортировка (radix sort) [[**C++**]](https://github.com/JIeHb/Projects/blob/master/radix_sort.cpp)
 * Сравнение сортировок с помощью диаграммы [[**Processing**]](https://github.com/JIeHb/Projects/tree/master/processing/SortingDiagram)
