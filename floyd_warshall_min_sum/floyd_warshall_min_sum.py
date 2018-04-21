@@ -19,7 +19,7 @@ min_sum = inf
 
 # Min sum search alg
 for i in range(n):
-	print(' '.join([str(j) if j != inf else '0' for j in g[i]]))
+	# print(' '.join([str(j) if j != inf else '0' for j in g[i]]))
 
 	# cur_sum = sum( g[i][j] * students[j] ) for j in range(n)
 	cur_sum = sum(list(map(lambda x, y: x * y, students, g[i])))

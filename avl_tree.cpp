@@ -47,7 +47,7 @@ int main()
 		tree.insert(value);
 		std::cin >> value;
 	}
-	tree.print_tree(FULL_NODE);
+	tree.print_tree(LEAF_NODE);
 }
 
 void t_tree::print_tree()
