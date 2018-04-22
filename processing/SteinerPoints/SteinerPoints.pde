@@ -40,8 +40,10 @@ PVector steiner_point(PVector A, PVector B, PVector C)
   return _X;
 }
 
-PVector[] points = new PVector[3];
+PVector[] points = new PVector[4];
 int p_count = 0;
+int max_count = 3;
+
 
 void circles()
 {
@@ -54,7 +56,7 @@ void circles()
 
 void mousePressed()
 {
-  if(p_count < 3)
+  if(p_count < max_count)
   {
     points[p_count] = new PVector(mouseX, mouseY);
     p_count++;
@@ -67,6 +69,8 @@ void mousePressed()
 }
 
 PVector _X = null;
+PVector[][] lines = new PVector[6][2];
+int max_line_count = 2 * max_count - 3;
 boolean is_found = false;
 
 void setup()
@@ -80,14 +84,20 @@ void draw()
   fill(200);
   stroke(230);
   circles();
-  if(p_count == 3)
+  if(p_count == max_count)
   {
     if(!is_found) // Check for angle > 120
     {
       _X = steiner_point(points[0], points[1], points[2]);
+      lines[0][0] = _X; lines[1][0] = _X; 
+      lines[0][1] = points[0]; lines[1][1] = points[1]; 
+      lines[2][0] = _X; lines[2][1] = points[2];
+      //PVector __X = steiner_point(_X, points[2], points[3]);
+      //lines[2][0] = __X; lines[3][0] = __X; lines[4][0] = __X;
+      //lines[2][1] = _X; lines[3][1] = points[2]; lines[4][1] = points[3];
       is_found = true;
     }
-    for(int i = 0; i < 3; i++)
-      dline(points[i], _X);
+    for(int i = 0; i < max_line_count; i++)
+      dline(lines[i][0], lines[i][1]);
   }
 }
