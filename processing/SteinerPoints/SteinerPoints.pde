@@ -78,6 +78,19 @@ void setup()
   size(400, 400);
 }
 
+PVector check_angles(PVector X)
+{
+  for(int i = 0; i < p_count; i++)
+  {
+    PVector p1 = points[i], p2 = points[(i+1)%max_count], p3 = points[(i+2)%max_count];
+    if(degrees(PVector.angleBetween(vect(p2, p1), vect(p2, p3))) >= 120)
+    {
+      return p2;
+    }
+  }
+  return X;
+}
+
 void draw()
 {
   background(51);
@@ -89,6 +102,7 @@ void draw()
     if(!is_found) // Check for angle > 120
     {
       _X = steiner_point(points[0], points[1], points[2]);
+      _X = check_angles(_X);
       lines[0][0] = _X; lines[1][0] = _X; 
       lines[0][1] = points[0]; lines[1][1] = points[1]; 
       lines[2][0] = _X; lines[2][1] = points[2];
