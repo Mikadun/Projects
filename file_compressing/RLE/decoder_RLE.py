@@ -1,7 +1,6 @@
 fin = open('compressed.txt', 'r').read()
 
 def string_split(string):
-  #
   string += '0'
   last_digit = True
   result = []
