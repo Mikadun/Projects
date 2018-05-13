@@ -13,6 +13,7 @@
 * Вычисление арифметических выражений [[**C++**]](https://github.com/JIeHb/Projects/blob/master/expression_parsing_tree.cpp)
 * Точки Штейнера [[**Processing**]](https://github.com/JIeHb/Projects/tree/master/processing/SteinerPoints)
 * Сжатие данных. RLE алгоритм [[**Python**]](https://github.com/JIeHb/Projects/tree/master/file_compressing/RLE/)
+* Сжатие данных. Алгоритм Хаффмана [[**C++**]](https://github.com/JIeHb/Projects/tree/master/file_compressing/huffman/)
 ### Языки и методы программирования. Коваленко Евгений Олегович. [[Материалы]](https://hackmd.io/s/B1zCbjLOz)
 * Хеш-таблица с методом цепочек [[**C++**]](https://github.com/JIeHb/Projects/blob/master/hash_table.cpp)
 * Поразрядная сортировка (radix sort) [[**C++**]](https://github.com/JIeHb/Projects/blob/master/radix_sort.cpp)
