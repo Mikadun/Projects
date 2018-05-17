@@ -22,8 +22,8 @@
 * Вычисление арифметических выражений [[**C++**]](https://github.com/JIeHb/Projects/blob/master/expression_calc.cpp)
 * Комбинаторика. [Задача F](http://informatics.mccme.ru/mod/statements/view3.php?id=211&chapterid=85). Все перестановки заданной длины. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/permutations.cpp)
 * Комбинаторика. [Задача D](http://informatics.mccme.ru/mod/statements/view3.php?id=264&chapterid=194). Следующая... [[**C++**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/next_permutation.cpp) [[**Python**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/next_permutation.py))
-* Комбинаторика. [Задача M](http://informatics.mccme.ru/mod/statements/view3.php?id=211&chapterid=92). Разбиение на неубывающие слагаемые, обратный порядок. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/terms.cpp) [[**Python**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/terms.py))
-* Комбинаторика. [Задача B](http://informatics.mccme.ru/mod/statements/view3.php?id=265&chapterid=196). Степень перестановки. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/permutation_degree.cpp) [[**Python**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/permutation_degree.py))
+* Комбинаторика. [Задача M](http://informatics.mccme.ru/mod/statements/view3.php?id=211&chapterid=92). Разбиение на неубывающие слагаемые, обратный порядок. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/terms.cpp) [[**Python**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/terms.py)
+* Комбинаторика. [Задача B](http://informatics.mccme.ru/mod/statements/view3.php?id=265&chapterid=196). Степень перестановки. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/permutation_degree.cpp) [[**Python**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/permutation_degree.py)
 ## 1 курс 2 семестр ПМИ (Б8103а). 2017 год.
 ### Летняя практика
 #### [Турнир №1](https://imcs.dvfu.ru/cats/main.pl?f=problems;cid=1161857) 
