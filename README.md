@@ -15,6 +15,7 @@
 * Сжатие данных. RLE алгоритм [[**Python**]](https://github.com/JIeHb/Projects/tree/master/file_compressing/RLE/)
 * Сжатие данных. Алгоритм Хаффмана [[**C++**]](https://github.com/JIeHb/Projects/tree/master/file_compressing/huffman/)
 * Машинки. [[**Processing**]](https://github.com/JIeHb/Projects/tree/master/processing/Cars/)
+* Площадь выпуклой фигуры, заданной точками. [[**Python**]](https://github.com/JIeHb/Projects/tree/master/geometry/area.py)
 ### Языки и методы программирования. Коваленко Евгений Олегович. [[Материалы]](https://hackmd.io/s/B1zCbjLOz)
 * Хеш-таблица с методом цепочек [[**C++**]](https://github.com/JIeHb/Projects/blob/master/hash_table.cpp)
 * Поразрядная сортировка (radix sort) [[**C++**]](https://github.com/JIeHb/Projects/blob/master/radix_sort.cpp)
