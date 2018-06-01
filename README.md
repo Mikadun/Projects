@@ -27,6 +27,11 @@
 * Комбинаторика. [Задача D](http://informatics.mccme.ru/mod/statements/view3.php?id=264&chapterid=194). Следующая... [[**C++**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/next_permutation.cpp) [[**Python**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/next_permutation.py)
 * Комбинаторика. [Задача M](http://informatics.mccme.ru/mod/statements/view3.php?id=211&chapterid=92). Разбиение на неубывающие слагаемые, обратный порядок. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/terms.cpp) [[**Python**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/terms.py)
 * Комбинаторика. [Задача B](http://informatics.mccme.ru/mod/statements/view3.php?id=265&chapterid=196). Степень перестановки. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/permutation_degree.cpp) [[**Python**]](https://github.com/JIeHb/Projects/blob/master/combinatorics/permutation_degree.py)
+* Графы. [Задача C](http://informatics.mccme.ru/mod/statements/view3.php?id=193&chapterid=7). Заправки. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/graph/gas_stations.cpp)
+* Графы. [Задача D](http://informatics.mccme.ru/mod/statements/view3.php?id=218&chapterid=98). Есть ли цикл?. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/graph/is_cycle.cpp)
+* Графы. [Задача H](http://informatics.mccme.ru/mod/statements/view3.php?id=218&chapterid=1334). Два профессора. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/graph/max_way_length.cpp)
+* Графы. [Задача B](http://informatics.mccme.ru/mod/statements/view3.php?id=261&chapterid=182). Получи дерево. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/graph/graph_to_tree.cpp)
+* Функции. Решение f(x) = 0. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/function/function_bsearch.cpp)
 ## 1 курс 2 семестр ПМИ (Б8103а). 2017 год.
 ### Летняя практика
 #### [Турнир №1](https://imcs.dvfu.ru/cats/main.pl?f=problems;cid=1161857) 
