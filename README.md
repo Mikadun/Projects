@@ -32,6 +32,7 @@
 * Графы. [Задача H](http://informatics.mccme.ru/mod/statements/view3.php?id=218&chapterid=1334). Два профессора. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/graph/max_way_length.cpp)
 * Графы. [Задача B](http://informatics.mccme.ru/mod/statements/view3.php?id=261&chapterid=182). Получи дерево. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/graph/graph_to_tree.cpp)
 * Функции. Решение f(x) = 0. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/function/function_bsearch.cpp)
+* Б-дерево. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/b_tree.cpp)
 ## 1 курс 2 семестр ПМИ (Б8103а). 2017 год.
 ### Летняя практика
 #### [Турнир №1](https://imcs.dvfu.ru/cats/main.pl?f=problems;cid=1161857) 
