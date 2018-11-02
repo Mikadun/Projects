@@ -9,6 +9,8 @@
 * Поиск подстроки в строке. Наивная реализация [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/substr_search.js)
 * Поиск подстроки в строке. Алгоритм Кнута-Морисса-Пратта. Наивная реализация [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/kmp_naive.js). Эффективная реализация [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/kmp.js)
 * Поиск подстроки в строке. Упрощенный алгоритм Бойера-Мура [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/boyer_moore.js)
+### Дифференциальная геометрия
+* Принадлежит ли точка многоугольнику. [Демонстрация](https://jiehb.github.io/point_inside_polygon/index.html), [Исходный код](https://github.com/JIeHb/JIeHb.github.io/blob/master/point_inside_polygon/sketch.js)
 ## 1 курс 2 семестр МКН (Б8102). 2018 год
 ### Алгоритмизация. Малыкина Ирина Анатольевна. [[Списки]](https://drive.google.com/open?id=1MfEQ9tJsp_NgQyFfVGNLF9QH8oKdYm1B) от 27.04.18
 * Хеш-таблица с открытой адресацией [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/open_addressing_hash_table.cpp)
