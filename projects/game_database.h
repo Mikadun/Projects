@@ -18,6 +18,11 @@ using std::vector;
 using std::map;
 using std::unordered_map;
 
+
+bool Compare(const GameObject& a, const GameObject& b) {
+    return a.id > b.id;
+}
+
 bool operator>(const GameObject& a, const GameObject& b) {
   return a.id > b.id;
 }
@@ -41,8 +46,8 @@ class GameDatabase {
     vector<GameObject> Data() const;
 
  private:
-    map<ObjectId, GameObject, std::greater<ObjectId>> data;
-    map<TPos, TVec> by_pos;
+    map<ObjectId, GameObject> data;
+    // map<TPos, TVec> by_pos;
     unordered_map<string, TVec> by_name;
 };
 
@@ -50,7 +55,7 @@ void GameDatabase::Insert(ObjectId id, string name, size_t x, size_t y) {
   GameObject temp = {id, name, x, y};
   data.insert_or_assign(id, temp);
   by_name[name].push_back(temp);
-  by_pos[TPos(x, y)].push_back(temp);
+  // by_pos[TPos(x, y)].push_back(temp);
 }
 
 void GameDatabase::Remove(ObjectId id) {
@@ -71,15 +76,15 @@ vector<GameObject> GameDatabase::DataByName(string name) const {
   for (auto it = container.begin(); it != container.end(); it++) {
     auto in_data = data.find(it->id);
     if (in_data != data.end() && in_data->second.name == name) {
-      result.push_back(*it);
+      result.push_back(in_data->second);
     }
   }
 
-  std::sort(result.begin(), result.end());
+  std::sort(result.begin(), result.end(), Compare);
   return result;
 }
 
-
+/*
 vector<GameObject> GameDatabase::DataByPosition(size_t x, size_t y) const {
   vector<GameObject> result;
   TPos pos(x, y);
@@ -88,10 +93,21 @@ vector<GameObject> GameDatabase::DataByPosition(size_t x, size_t y) const {
     auto in_data = data.find(it->id);
     GameObject obj = in_data->second;
     if (in_data != data.end() && obj.x == x && obj.y == y) {
-      result.push_back(*it);
+      result.push_back(obj);
     }
   }
   std::sort(result.begin(), result.end());
+  return result;
+}
+*/
+
+vector<GameObject> GameDatabase::DataByPosition(size_t x, size_t y) const {
+  vector<GameObject> result;
+  for (auto it = data.begin(); it != data.end(); it++) {
+    if (it->second.x == x && it->second.y == y)
+      result.push_back(it->second);
+  }
+  std::sort(result.begin(), result.end(), Compare);
   return result;
 }
 
@@ -99,5 +115,6 @@ vector<GameObject> GameDatabase::Data() const {
   vector<GameObject> result;
   for (auto it = data.begin(); it != data.end(); it++)
     result.push_back(it->second);
+  std::sort(result.begin(), result.end(), Compare);
   return result;
 }
