@@ -48,7 +48,7 @@ class GameDatabase {
  private:
     map<ObjectId, GameObject> data;
     // map<TPos, TVec> by_pos;
-    unordered_map<string, TVec> by_name;
+    map<string, TVec> by_name;
 };
 
 void GameDatabase::Insert(ObjectId id, string name, size_t x, size_t y) {
@@ -59,10 +59,7 @@ void GameDatabase::Insert(ObjectId id, string name, size_t x, size_t y) {
 }
 
 void GameDatabase::Remove(ObjectId id) {
-  auto obj = data.find(id);
-  if (obj != data.end()) {
-    data.erase(obj);
-  }
+  data.erase(id);
 }
 
 pair<GameObject, bool> GameDatabase::DataById(ObjectId id) const {
@@ -96,11 +93,12 @@ vector<GameObject> GameDatabase::DataByPosition(size_t x, size_t y) const {
       result.push_back(obj);
     }
   }
-  std::sort(result.begin(), result.end());
+  std::sort(result.begin(), result.end(), Compare);
   return result;
 }
 */
 
+///*
 vector<GameObject> GameDatabase::DataByPosition(size_t x, size_t y) const {
   vector<GameObject> result;
   for (auto it = data.begin(); it != data.end(); it++) {
@@ -110,6 +108,7 @@ vector<GameObject> GameDatabase::DataByPosition(size_t x, size_t y) const {
   std::sort(result.begin(), result.end(), Compare);
   return result;
 }
+//*/
 
 vector<GameObject> GameDatabase::Data() const {
   vector<GameObject> result;
