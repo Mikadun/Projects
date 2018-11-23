@@ -1,9 +1,10 @@
 ## 2 курс 1 семестр МКН (Б8202). 2018 год
 ### Языки и методы программирования. Спорышев Максим Сергеевич
-* Турнир 1. Задача A PrimeNumberGenerator [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/PrimeNumberGenerator.cpp)
-* Турнир 1. Задача B Date [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/Date.cpp)
-* Турнир 1. Задача C Set [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/Set.cpp)
-* Турнир 2. Задача B Allocator [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/allocator.h)
+* Турнир 1. Задача A: PrimeNumberGenerator [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/PrimeNumberGenerator.cpp)
+* Турнир 1. Задача B: Date [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/Date.cpp)
+* Турнир 1. Задача C: Set [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/Set.cpp)
+* Турнир 2. Задача B: Allocator [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/allocator.h)
+* Турнир 2. Задача C: Factory [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/factory.h)
 ### Python. Баранов Андрей Александрович
 * Турнир 1. Задача B: Сортировка записей [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/polynomial_reduction.py). Абстрактная реализация [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/polynomial_reduction_abstract.py)
 ### Алгоритмизация. Журавлев Павел Викторович
