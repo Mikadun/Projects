@@ -3,6 +3,7 @@
 * Турнир 1. Задача A PrimeNumberGenerator [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/PrimeNumberGenerator.cpp)
 * Турнир 1. Задача B Date [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/Date.cpp)
 * Турнир 1. Задача C Set [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/Set.cpp)
+* Турнир 2. Задача B Allocator [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/allocator.h)
 ### Python. Баранов Андрей Александрович
 * Турнир 1. Задача B: Сортировка записей [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/polynomial_reduction.py). Абстрактная реализация [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/polynomial_reduction_abstract.py)
 ### Алгоритмизация. Журавлев Павел Викторович
