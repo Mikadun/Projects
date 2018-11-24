@@ -35,7 +35,6 @@ class DereferenceCompare {
 };
 
 using TPos = pair<size_t, size_t>;
-using TVec = vector<GameObject>;
 using TSet = set<GameObject*, DereferenceCompare<GameObject, std::greater>>;
 
 class GameDatabase {
@@ -51,7 +50,7 @@ class GameDatabase {
 
  private:
     map<ObjectId, GameObject, std::greater<ObjectId>> data;
-    // map<TPos, TVec> by_pos;
+    map<TPos, TSet> by_pos;
     map<string, TSet> by_name;
 };
 
@@ -61,10 +60,8 @@ void GameDatabase::Insert(ObjectId id, string name, size_t x, size_t y) {
     Remove(id);
   data.insert(make_pair(id, temp));
   by_name[name].insert(&data[id]);
-  /*
   TPos pos = make_pair(x, y);
-  by_pos[pos].push_back(temp);
-  */
+  by_pos[pos].insert(&data[id]);
 }
 
 void GameDatabase::Remove(ObjectId id) {
@@ -72,6 +69,8 @@ void GameDatabase::Remove(ObjectId id) {
   if (it != data.end()) {
     GameObject obj = it->second;
     by_name[obj.name].erase(&obj);
+    TPos pos = make_pair(obj.x, obj.y);
+    by_pos[pos].erase(&obj);
     data.erase(it);
   }
 }
@@ -84,7 +83,7 @@ pair<GameObject, bool> GameDatabase::DataById(ObjectId id) const {
 vector<GameObject> GameDatabase::DataByName(string name) const {
   vector<GameObject> result;
   if (by_name.find(name) != by_name.end()) {
-    TSet container = by_name.find(name)->second;
+    TSet& container = by_name.find(name)->second;
     for (auto it = container.begin(); it != container.end(); it++) {
       result.push_back(**it);
     }
@@ -92,26 +91,21 @@ vector<GameObject> GameDatabase::DataByName(string name) const {
   return result;
 }
 
-/*
+///*
 vector<GameObject> GameDatabase::DataByPosition(size_t x, size_t y) const {
   vector<GameObject> result;
   TPos pos = make_pair(x, y);
-  if (by_pos.find(pos) == by_pos.end())
-    return result;
-  TVec container = by_pos.find(pos)->second;
-  for (auto it = container.begin(); it != container.end(); it++) {
-    auto in_data = data.find(it->id);
-    GameObject obj = in_data->second;
-    if (in_data != data.end() && obj.x == x && obj.y == y) {
-      result.push_back(obj);
+  if (by_pos.find(pos) != by_pos.end()) {
+    TSet& container = by_pos.find(pos)->second;
+    for (auto it = container.begin(); it != container.end(); it++) {
+      result.push_back(**it);
     }
   }
-  std::sort(result.begin(), result.end(), Compare);
   return result;
 }
-*/
+//*/
 
-///*
+/*
 vector<GameObject> GameDatabase::DataByPosition(size_t x, size_t y) const {
   vector<GameObject> result;
   for (auto it = data.begin(); it != data.end(); it++) {
@@ -121,7 +115,7 @@ vector<GameObject> GameDatabase::DataByPosition(size_t x, size_t y) const {
   std::sort(result.begin(), result.end(), Compare);
   return result;
 }
-//*/
+*/
 
 vector<GameObject> GameDatabase::Data() const {
   vector<GameObject> result;
