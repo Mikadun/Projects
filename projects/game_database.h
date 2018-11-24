@@ -16,10 +16,6 @@ using std::vector;
 using std::map;
 using std::set;
 
-bool Compare(const GameObject& a, const GameObject& b) {
-    return a.id > b.id;
-}
-
 bool operator>(const GameObject& a, const GameObject& b) {
   return a.id > b.id;
 }
@@ -27,7 +23,7 @@ bool operator>(const GameObject& a, const GameObject& b) {
 template<class T, template<class> class Compare>
 class DereferenceCompare {
  public:
-    bool operator()(const T* const a, const T* const b) {
+    bool operator()(const T* const a, const T* const b) const {
       return comp(*a, *b);
     }
  private:
@@ -83,7 +79,7 @@ pair<GameObject, bool> GameDatabase::DataById(ObjectId id) const {
 vector<GameObject> GameDatabase::DataByName(string name) const {
   vector<GameObject> result;
   if (by_name.find(name) != by_name.end()) {
-    TSet& container = by_name.find(name)->second;
+    TSet container = by_name.find(name)->second;
     for (auto it = container.begin(); it != container.end(); it++) {
       result.push_back(**it);
     }
@@ -91,31 +87,17 @@ vector<GameObject> GameDatabase::DataByName(string name) const {
   return result;
 }
 
-///*
 vector<GameObject> GameDatabase::DataByPosition(size_t x, size_t y) const {
   vector<GameObject> result;
   TPos pos = make_pair(x, y);
   if (by_pos.find(pos) != by_pos.end()) {
-    TSet& container = by_pos.find(pos)->second;
+    TSet container = by_pos.find(pos)->second;
     for (auto it = container.begin(); it != container.end(); it++) {
       result.push_back(**it);
     }
   }
   return result;
 }
-//*/
-
-/*
-vector<GameObject> GameDatabase::DataByPosition(size_t x, size_t y) const {
-  vector<GameObject> result;
-  for (auto it = data.begin(); it != data.end(); it++) {
-    if (it->second.x == x && it->second.y == y)
-      result.push_back(it->second);
-  }
-  std::sort(result.begin(), result.end(), Compare);
-  return result;
-}
-*/
 
 vector<GameObject> GameDatabase::Data() const {
   vector<GameObject> result;
