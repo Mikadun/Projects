@@ -13,6 +13,7 @@
 * Поиск подстроки в строке. Наивная реализация [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/substr_search.js)
 * Поиск подстроки в строке. Алгоритм Кнута-Морисса-Пратта. Наивная реализация [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/kmp_naive.js). Эффективная реализация [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/kmp.js)
 * Поиск подстроки в строке. Упрощенный алгоритм Бойера-Мура [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/boyer_moore.js)
+* Пересечение линий [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/line_intersection.py)
 ### Дифференциальная геометрия
 * Принадлежит ли точка многоугольнику. [Демонстрация](https://jiehb.github.io/point_inside_polygon/index.html), [Исходный код](https://github.com/JIeHb/JIeHb.github.io/blob/master/point_inside_polygon/sketch.js)
 ## 1 курс 2 семестр МКН (Б8102). 2018 год
