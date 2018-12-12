@@ -10,5 +10,8 @@ for i in range(n - 1):
     if points[i]['l'] <= points[j]['l'] <= points[i]['r']:
       result.add(tuple(sorted([points[i]['idx'], points[j]['idx']])))
 
-for i in result:
-  print(i)
+if len(result):
+  for i in result:
+    print(i)
+else:
+  print("There isn't any intersections")
