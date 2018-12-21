@@ -4,9 +4,11 @@
 * Турнир 1. Задача B: Date [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/Date.cpp)
 * Турнир 1. Задача C: Set [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/Set.cpp)
 * Турнир 1. Задача D: BufferedReader [[**C++**]](https://github.com/JIeHb/Projects/tree/master/projects)
+---
 * Турнир 2. Задача A: GameDatabase [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/game_database.h)
 * Турнир 2. Задача B: Allocator [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/allocator.h)
 * Турнир 2. Задача C: Factory [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/factory.h)
+---
 * Турнир 3. Задача A: Convert [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/convert.h)
 * Турнир 3. Задача C: Find [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/find.h)
 * Турнир 3. Задача E: Initialize vector [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/initialize_vector.h)
