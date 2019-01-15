@@ -20,6 +20,7 @@
 * Поиск подстроки в строке. Наивная реализация [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/substr_search.js)
 * Поиск подстроки в строке. Алгоритм Кнута-Морисса-Пратта. Наивная реализация [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/kmp_naive.js). Эффективная реализация [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/kmp.js)
 * Поиск подстроки в строке. Упрощенный алгоритм Бойера-Мура [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/boyer_moore.js)
+* Поиск подстроки в строке. Алгоритм Ахо-Корасика [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/aho_corasik.py)
 * Пересечение линий [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/line_intersection.py)
 * Пересечение линий в двухмерном пространстве [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/lines_intersection_2D.py)
 ### Дифференциальная геометрия
