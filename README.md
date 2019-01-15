@@ -12,6 +12,8 @@
 * Турнир 3. Задача A: Convert [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/convert.h)
 * Турнир 3. Задача C: Find [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/find.h)
 * Турнир 3. Задача E: Initialize vector [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/initialize_vector.h)
+---
+* Игра [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/ChessLikeGame.cpp)
 ### Python. Баранов Андрей Александрович
 * Турнир 1. Задача B: Сортировка записей [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/polynomial_reduction.py). Абстрактная реализация [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/polynomial_reduction_abstract.py)
 ### Алгоритмизация. Журавлев Павел Викторович
