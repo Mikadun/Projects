@@ -13,6 +13,7 @@
 * Турнир 3. Задача C: Find [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/find.h)
 * Турнир 3. Задача E: Initialize vector [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/initialize_vector.h)
 ---
+* Турнир 4. Задача A: Caesar Encrypt [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/CaesarEncrypt.h)
 * Игра [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/ChessLikeGame.cpp)
 ### Python. Баранов Андрей Александрович
 * Турнир 1. Задача B: Сортировка записей [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/polynomial_reduction.py). Абстрактная реализация [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/polynomial_reduction_abstract.py)
