@@ -3,7 +3,7 @@
 * Турнир 1. Задача A: PrimeNumberGenerator [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/PrimeNumberGenerator.cpp)
 * Турнир 1. Задача B: Date [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/Date.cpp)
 * Турнир 1. Задача C: Set [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/Set.cpp)
-* Турнир 1. Задача D: BufferedReader [[**C++**]](https://github.com/JIeHb/Projects/tree/master/projects)
+* Турнир 1. Задача D: BufferedReader [[**C++**]](https://github.com/JIeHb/Projects/tree/master/projects/buffered_reader.h)
 ---
 * Турнир 2. Задача A: GameDatabase [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/game_database.h)
 * Турнир 2. Задача B: Allocator [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/allocator.h)
