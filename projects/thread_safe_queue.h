@@ -2,6 +2,7 @@
 #include <mutex>
 #include <condition_variable>
 #include <utility>
+#include <type_traits>
 
 template <typename T>
 class Queue {
@@ -18,9 +19,15 @@ class Queue {
       while (!queue_.size()) {
           cond_.wait(mlock);
       }
-      T& item = queue_.front();
-      queue_.pop();
-      return item;
+      try {
+        T& item = queue_.front();
+        queue_.pop();
+        return item;
+      }
+      catch (...) {
+        queue_.pop();
+        return std::declval<T>();
+      }
     }
 
     void Push(T&& item) {
