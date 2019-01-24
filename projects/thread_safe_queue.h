@@ -19,15 +19,9 @@ class Queue {
       while (!queue_.size()) {
           cond_.wait(mlock);
       }
-      try {
-        T& item = queue_.front();
-        queue_.pop();
-        return item;
-      }
-      catch (...) {
-        queue_.pop();
-        return std::declval<T>();
-      }
+      T& item = queue_.front();
+      queue_.pop();
+      return std::move(item);
     }
 
     void Push(T&& item) {
