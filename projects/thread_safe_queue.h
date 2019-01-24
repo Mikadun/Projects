@@ -14,19 +14,19 @@ class Queue {
       return size;
     }
 
-    T& Pop() {
+    T Pop() {
       std::unique_lock<std::mutex> mlock(mutex_);
       while (!queue_.size()) {
           cond_.wait(mlock);
       }
-      T& item = queue_.front();
+      T item = std::move(queue_.front());
       queue_.pop();
       return std::move(item);
     }
 
     void Push(T&& item) {
       std::unique_lock<std::mutex> mlock(mutex_);
-      queue_.push(item);
+      queue_.push(std::move(item));
       mlock.unlock();
       cond_.notify_one();
     }
@@ -34,7 +34,7 @@ class Queue {
     template<class... Args >
     void Emplace(Args&&... args) {
       std::unique_lock<std::mutex> mlock(mutex_);
-      queue_.emplace(std::forward<Args>(args)...);
+      queue_.emplace(args...);
       mlock.unlock();
       cond_.notify_one();
     }
