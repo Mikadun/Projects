@@ -65,7 +65,7 @@ def L3(px, x0):
 # n-я производная функции, n >= 2
 
 def df(px, n):
-    return (-1)**(n + 1) * 1 / px ** n
+    return (-1)**(n + 1) * factorial(n) / px ** n
 
 # Функция вычисления остаточного члена
 
@@ -75,9 +75,9 @@ def R(node, degree, mode = min):
 # Функция сравнения остаточных членов
 
 def compare(node, degree, L, x0):
-    print(R(node, degree, min))
+    print(abs(R(node, degree, min)))
     print(abs(L(node, x0) - f(node)))
-    print(R(node, n + 1, max))
+    print(abs(R(node, n + 1, max)))
     print()
 
 # Сравнение

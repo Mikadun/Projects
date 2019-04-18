@@ -31,7 +31,7 @@ def df(px, n):
         return 2 * px + 1 / px
     if n == 2:
         return 2 - 1 / px ** 2
-    return (-1)**(n + 1) * 1 / px ** n
+    return (-1)**(n + 1) * factorial(n) / px ** n
 
 # Производная вшита, так что только для n = 3
 
