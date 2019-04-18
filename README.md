@@ -1,6 +1,7 @@
 ## 2 курс 2 семестр МКН (Б8202). 2019 год
 ### Численные методы (практика). Кузнецова Наталья Владиславовна. [Задания](https://drive.google.com/open?id=1nYDXP-O3bQwfiundHQBkMnAt3YQOGIK1)
 * Лабораторная работа 2: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_2.py) [[**Отчет**]](https://drive.google.com/open?id=1VSAlhtenOduUsZvY_q2DHjBF68MW0qBA)
+* Лабораторная работа 3: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_3.py)
 ## 2 курс 1 семестр МКН (Б8202). 2018 год
 ### Языки и методы программирования. Спорышев Максим Сергеевич
 * Турнир 1. Задача A: PrimeNumberGenerator [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/PrimeNumberGenerator.cpp)
