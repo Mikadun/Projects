@@ -50,14 +50,14 @@ def dL(px, n):
 # Функция вычисления остаточного члена
 
 def R(node, degree, mode = min):
-    return mode([df(xi, degree) for xi in x]) * sum_dx(node, 0, degree - 1) / factorial(degree)
+    return mode([df(xi, degree) for xi in x]) * sum_dx(node, 0, degree - 1, 2) / factorial(degree)
 
 # Функция сравнения остаточных членов
 
 def compare(node, degree, L):
-    print(R(node, degree, min))
+    print(R(node, degree + 1, min))
     print(abs(L(node, degree) - df(node, 1)))
-    print(R(node, n + 1, max))
+    print(R(node, degree + 1, max))
     print()
 
 # Сравнение
