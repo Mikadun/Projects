@@ -15,6 +15,7 @@
 ---
 * Турнир 3. Задача A: Convert [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/convert.h)
 * Турнир 3. Задача C: Find [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/find.h)
+* Турнир 3. Задача D: Merge (решена Денисом Михайловым) [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/merge_made_by_denis.cpp)
 * Турнир 3. Задача E: Initialize vector [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/initialize_vector.h)
 ---
 * Турнир 4. Задача A: Caesar Encrypt [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/CaesarEncrypt.h)
