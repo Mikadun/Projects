@@ -11,12 +11,13 @@ def I(i):
     h = get_h(i)
     return sum([f(a + h * (j + 0.5)) for j in range(i * n - 1)]) * h
 
-EPS = 0.0000001
+EPS = 1e-10
 
 while True:
     I1 = I(i)
     I2 = I(i + 1)
-    i += 1
+    i *= 2
     if abs(I1 - I2) < EPS:
+        print(i)
         print(I1)
         break
