@@ -11,7 +11,7 @@ def I(i):
     h = get_h(i)
     return sum([f(a + h * (j + 0.5)) for j in range(i * n - 1)]) * h
 
-EPS = 1e-10
+EPS = 1e-5
 
 while True:
     I1 = I(i)
