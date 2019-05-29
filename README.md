@@ -3,6 +3,8 @@
 * Лабораторная работа 2: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_2.py) [[**Отчет**]](https://drive.google.com/open?id=1VSAlhtenOduUsZvY_q2DHjBF68MW0qBA)
 * Лабораторная работа 3: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_3.py) [[**Отчет**]](https://drive.google.com/file/d/1_OqKYnT21lH5VRkjIPctHgv54DyXjatc/view?usp=sharing)
 * Лабораторная работа 4: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_4.py) [[**Отчет**]](https://drive.google.com/file/d/1_z9vj6bBKlmeYdO3AJ5Us5A08Ic2TDte/view?usp=sharing)
+* Лабораторная работа 5: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_5.py) [[**Отчет**]](https://drive.google.com/file/d/1U_kfUQG17M6wyazzELQv3UBK-j_EfDA1/view?usp=sharing)
+
 ## 2 курс 1 семестр МКН (Б8202). 2018 год
 ### Языки и методы программирования. Спорышев Максим Сергеевич
 * Турнир 1. Задача A: PrimeNumberGenerator [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/PrimeNumberGenerator.cpp)
@@ -21,8 +23,10 @@
 ---
 * Турнир 4. Задача A: Caesar Encrypt [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/CaesarEncrypt.h)
 * Игра [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/ChessLikeGame.cpp)
+
 ### Python. Баранов Андрей Александрович
 * Турнир 1. Задача B: Сортировка записей [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/polynomial_reduction.py). Абстрактная реализация [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/polynomial_reduction_abstract.py)
+
 ### Алгоритмизация. Журавлев Павел Викторович
 * Поиск подстроки в строке. Наивная реализация [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/substr_search.js)
 * Поиск подстроки в строке. Алгоритм Кнута-Морисса-Пратта. Наивная реализация [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/kmp_naive.js). Эффективная реализация [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/kmp.js)
@@ -30,8 +34,10 @@
 * Поиск подстроки в строке. Алгоритм Ахо-Корасика [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/aho_corasik.py)
 * Пересечение линий [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/line_intersection.py)
 * Пересечение линий в двухмерном пространстве [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/lines_intersection_2D.py)
+
 ### Дифференциальная геометрия
 * Принадлежит ли точка многоугольнику. [Демонстрация](https://jiehb.github.io/point_inside_polygon/index.html), [Исходный код](https://github.com/JIeHb/JIeHb.github.io/blob/master/point_inside_polygon/sketch.js)
+
 ## 1 курс 2 семестр МКН (Б8102). 2018 год
 ### Алгоритмизация. Малыкина Ирина Анатольевна. [[Списки]](https://drive.google.com/open?id=1MfEQ9tJsp_NgQyFfVGNLF9QH8oKdYm1B) от 27.04.18
 * Хеш-таблица с открытой адресацией [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/open_addressing_hash_table.cpp)
@@ -51,6 +57,7 @@
 * Машинки. [[**Processing**]](https://github.com/JIeHb/Projects/tree/master/projects/processing/Cars/)
 * Площадь выпуклой фигуры, заданной точками. [[**Python**]](https://github.com/JIeHb/Projects/tree/master/projects/geometry/area.py)
 * Найти окружность с наименьшей площадью, содержащую все данные точки [[**Processing**]](https://github.com/JIeHb/Projects/tree/master/projects/processing/Circle_around_points/)
+
 ### Языки и методы программирования. Коваленко Евгений Олегович. [[Материалы]](https://hackmd.io/s/B1zCbjLOz)
 * Хеш-таблица с методом цепочек [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/hash_table.cpp)
 * Поразрядная сортировка (radix sort) [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/radix_sort.cpp)
@@ -67,21 +74,25 @@
 * Графы. [Задача B](http://informatics.mccme.ru/mod/statements/view3.php?id=261&chapterid=182). Получи дерево. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/graph/graph_to_tree.cpp)
 * Функции. Решение f(x) = 0. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/function/function_bsearch.cpp)
 * Б-дерево. [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/b_tree.cpp)
+
 ## 1 курс 2 семестр ПМИ (Б8103а). 2017 год.
 ### Летняя практика
 #### [Турнир №1](https://imcs.dvfu.ru/cats/main.pl?f=problems;cid=1161857) 
 * Столкновение шаров [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1162631.html) [[**C**]](https://github.com/JIeHb/Projects/blob/master/projects/collision_of_balls.c)
 * Пеленг НЛО [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1162632.html) [[**C**]](https://github.com/JIeHb/Projects/blob/master/projects/Unknown_flying_object.c)
 * Чебурашка и Бильярд [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1162633.html) [[**C**]](https://github.com/JIeHb/Projects/blob/master/projects/billiards.c)
+
 #### [Турнир №2](https://imcs.dvfu.ru/cats/main.pl?f=problems;cid=1162949)
 * Астероидное поле [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1162958.html) [[**C**]](https://github.com/JIeHb/Projects/blob/master/projects/asteroid_field.c)
 * Пересечение окружностей [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1162967.html) [[**C**]](https://github.com/JIeHb/Projects/blob/master/projects/circular_area.c)
+
 #### [Турнир №3](https://imcs.dvfu.ru/cats/main.pl?f=problems;cid=1167426)
 * C--- [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1167436.html) [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/c---.js)
 * Гистограмма [[*Задача*]](https://imcs.dvfu.ru/cats/static/problem_text-cpid-1167435.html) [[**JavaScript**]](https://github.com/JIeHb/Projects/blob/master/projects/bar_chart.js)
+
 #### Проекты на JavaScript
-* Крестики-Нолики [[**JavaScript**]](https://github.com/JIeHb/Tic-tac-toe)
 * Neon Wires. Командный проект [[**JavaScript**]](https://github.com/JIeHb/Neon-Wires)
+
 ### Практикум на ЭВМ. Малявин Никита Сергеевич
 * WC утилита [[**C**]](https://github.com/JIeHb/Projects/blob/master/projects/wc.c)
 * Библиотека для динамических массивов [[**C**]](https://github.com/JIeHb/Projects/blob/master/projects/linear_sequence.c)
