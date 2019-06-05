@@ -4,6 +4,8 @@
 * Лабораторная работа 3: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_3.py) [[**Отчет**]](https://drive.google.com/file/d/1_OqKYnT21lH5VRkjIPctHgv54DyXjatc/view?usp=sharing)
 * Лабораторная работа 4: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_4.py) [[**Отчет**]](https://drive.google.com/file/d/1_z9vj6bBKlmeYdO3AJ5Us5A08Ic2TDte/view?usp=sharing)
 * Лабораторная работа 5: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_5.py) [[**Отчет**]](https://drive.google.com/file/d/1U_kfUQG17M6wyazzELQv3UBK-j_EfDA1/view?usp=sharing)
+* Лабораторная работа 6: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_6.py) [[**Отчет**]](https://drive.google.com/file/d/1Qdi_eg_vub9QbPamfQrFaqmBcQxazcUO/view?usp=sharing)
+* Лабораторная работа 7: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_7.py) [[**Отчет**]](https://drive.google.com/file/d/13_37_WJrqbGVdGA5iDLZW7iJrw6s4kCw/view?usp=sharing)
 
 ## 2 курс 1 семестр МКН (Б8202). 2018 год
 ### Языки и методы программирования. Спорышев Максим Сергеевич
