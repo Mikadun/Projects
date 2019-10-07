@@ -1,6 +1,7 @@
 ## 3 курс 1 семестр МКН (Б8117-02.03.01)
 ### Численные методы (практика). Кузнецова Наталья Владиславовна
-* Обусловленность матрицы от размерности и погрешности [**Python**]()
+* Обусловленность матрицы от размерности и погрешности [**Python**](https://github.com/JIeHb/Projects/blob/master/projects/matrix.py)
+* LU разложение матрицы, решение матрицы через LU разложение [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/num_methods_2) [[**Отчет**]](https://drive.google.com/open?id=1nCzr1b8Y9yQQ8E06GqPlwFmso5zlYRQ6)
 ## 2 курс 2 семестр МКН (Б8202). 2019 год
 ### Численные методы (практика). Кузнецова Наталья Владиславовна. [Задания](https://drive.google.com/open?id=1nYDXP-O3bQwfiundHQBkMnAt3YQOGIK1) [Рейтинг](https://docs.google.com/spreadsheets/d/1wdCW6W14ciO8Jp5YQtN2K-xAcelcF3VhZEJt9xijhlE)
 * Лабораторная работа 2: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_2.py) [[**Отчет**]](https://drive.google.com/open?id=1VSAlhtenOduUsZvY_q2DHjBF68MW0qBA)
