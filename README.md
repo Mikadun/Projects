@@ -1,5 +1,5 @@
 ## 3 курс 1 семестр МКН (Б8117-02.03.01)
-### Численные методы (практика). Кузнецова Наталья Владиславовна
+### Численные методы (практика). Кузнецова Наталья Владиславовна. [Рейтинг](https://docs.google.com/spreadsheets/d/1wdCW6W14ciO8Jp5YQtN2K-xAcelcF3VhZEJt9xijhlE)
 * Обусловленность матрицы от размерности и погрешности [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/matrix.py)
 * LU разложение матрицы, решение матрицы через LU разложение [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/num_methods_2.py) [[**Отчет**]](https://drive.google.com/open?id=1nCzr1b8Y9yQQ8E06GqPlwFmso5zlYRQ6)
 * Разложение матрицы методом квадратного корня [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/nm_method_of_square_root.py)
