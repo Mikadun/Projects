@@ -5,6 +5,7 @@
 * Разложение матрицы методом квадратного корня [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/nm_method_of_square_root.py)
 * Решение матрицы методом простой итерации [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/nm_simple_it_method.py)
 * Решение матрицы методом Якоби [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/nm_jacobi_method.py)
+* Решение матрицы методом Зейделя [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/nm_seidel_method.py)
 ## 2 курс 2 семестр МКН (Б8202). 2019 год
 ### Численные методы (практика). Кузнецова Наталья Владиславовна. [Задания](https://drive.google.com/open?id=1nYDXP-O3bQwfiundHQBkMnAt3YQOGIK1) [Рейтинг](https://docs.google.com/spreadsheets/d/1wdCW6W14ciO8Jp5YQtN2K-xAcelcF3VhZEJt9xijhlE)
 * Лабораторная работа 2: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_2.py) [[**Отчет**]](https://drive.google.com/open?id=1VSAlhtenOduUsZvY_q2DHjBF68MW0qBA)
