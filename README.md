@@ -3,6 +3,7 @@
 * Обусловленность матрицы от размерности и погрешности [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/matrix.py)
 * LU разложение матрицы, решение матрицы через LU разложение [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/num_methods_2.py) [[**Отчет**]](https://drive.google.com/open?id=1nCzr1b8Y9yQQ8E06GqPlwFmso5zlYRQ6)
 * Разложение матрицы методом квадратного корня [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/nm_method_of_square_root.py)
+* Вычисление обратной матрицы методом окаймления [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/nm_bordering_method.py)
 * Решение матрицы методом простой итерации [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/nm_simple_it_method.py)
 * Решение матрицы методом Якоби [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/nm_jacobi_method.py)
 * Решение матрицы методом Зейделя [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/nm_seidel_method.py)
