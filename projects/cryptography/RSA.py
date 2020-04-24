@@ -187,7 +187,7 @@ def test(_range, ax, algorithm, color='blue'):
         t = time.time()
         rsa(2 ** i, algorithm)
         times.append(time.time() - t)
-    lineplot(ax, _range, times, y_label = 'seconds', x_label = 'length', color=color)
+    lineplot(ax, _range, times, y_label = 'seconds', x_label = 'length: 2^', color=color)
 
 test(_range, ax, Miller_Rabin, 'red')
 test(_range, ax, Solovay_Strassen, 'blue')

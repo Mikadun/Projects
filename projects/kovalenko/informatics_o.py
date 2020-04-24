@@ -1,0 +1,2 @@
+d = dict([(lambda x: ( x[0], [({'R': 'read', 'W': 'write', 'X': 'execute'})[c] for c in x[1:]] ))(input().split()) for _ in range(int(input()))])
+print('\n'.join([(lambda x: 'OK' if x[0] in d[x[1]] else 'Access denied')(input().split()) for _ in range(int(input()))]))
