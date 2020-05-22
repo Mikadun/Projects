@@ -1,6 +1,6 @@
 class Polynomial:
     def __init__(self, koefs):
-        self.koefs = koefs
+        self.koefs = koefs.copy()
 
     def __add__(self, other):
         min_length, max_length = sorted((len(self.koefs), len(other.koefs)))

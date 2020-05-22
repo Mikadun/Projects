@@ -1,10 +1,7 @@
 with open('input.txt') as f:
     d = {}
     for word in f.read().split():
-        if word in d.keys():
-            d[word] += 1
-        else:
-            d[word] = 1
+        d[word] = d.get(word, 0) + 1
     d2 = {}
     for word in d.keys():
         if d[word] in d2.keys():
