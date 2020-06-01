@@ -4,6 +4,7 @@
 * Протокол Диффи — Хеллмана [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/cryptography/diffie-hellman.py)
 ### Основы проектной деятельности. Коваленко Евгений Олегович
 * Калькулятор [[**PyQt5**]](https://github.com/JIeHb/Projects/blob/master/projects/kovalenko/calculator/)
+* HTML Редактор [[**PyQt5**]](https://github.com/JIeHb/Projects/blob/master/projects/kovalenko/editor/)
 ## 3 курс 1 семестр МКН (Б8117-02.03.01)
 ### Численные методы (практика). Кузнецова Наталья Владиславовна. [Рейтинг](https://docs.google.com/spreadsheets/d/1wdCW6W14ciO8Jp5YQtN2K-xAcelcF3VhZEJt9xijhlE)
 * Обусловленность матрицы от размерности и погрешности [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/matrix.py)
