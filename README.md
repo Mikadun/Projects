@@ -1,6 +1,6 @@
 ## 4 курс 1 семестр МКН (Б8117-02.03.01)
 ### Большие данные. Шевченко Юрий Андреевич
-* Лабораторая 2. Jupyter, pandas. Датасет REIGN [[**Jupyter notebook**]](https://github.com/JIeHb/Projects/blob/master/projects/bigdata/lab2_REIGN.ipynb)
+* Лабораторная 2. Jupyter, pandas. Датасет REIGN [[**Jupyter notebook**]](https://github.com/JIeHb/Projects/blob/master/projects/bigdata/lab2_REIGN.ipynb)
 * Лабораторная 3. R. Датасет titanic [[**R**]](https://github.com/JIeHb/Projects/blob/master/projects/bigdata/lab3_titanic.R)
 ## 3 курс 2 семестр МКН (Б8117-02.03.01)
 ### Криптография. Селезнев Тим Эдуардович
