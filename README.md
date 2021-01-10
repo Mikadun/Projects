@@ -1,7 +1,7 @@
 ## 4 курс 1 семестр МКН (Б8117-02.03.01)
 ### Большие данные. Шевченко Юрий Андреевич
 * Лабораторная 1. Python. Анимация из json файла [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/bigdata/lab1.py)
-* Лабораторая 2. Jupyter, pandas. Датасет REIGN [[**Jupyter notebook**]](https://github.com/JIeHb/Projects/blob/master/projects/bigdata/lab2_REIGN.ipynb)
+* Лабораторная 2. Jupyter, pandas. Датасет REIGN [[**Jupyter notebook**]](https://github.com/JIeHb/Projects/blob/master/projects/bigdata/lab2_REIGN.ipynb)
 * Лабораторная 3. R. Датасет titanic [[**R**]](https://github.com/JIeHb/Projects/blob/master/projects/bigdata/lab3_titanic.R)
 * Лабораторная 4. Microsoft Power Bi. Олимпийские игры [[**Power Bi**]](https://drive.google.com/file/d/1CykDQGC09YO66Ge9O-JIgqPZlf-1rLMF/view?usp=sharing)
 ## 3 курс 2 семестр МКН (Б8117-02.03.01)
