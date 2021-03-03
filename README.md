@@ -1,10 +1,13 @@
-## 4 курс 1 семестр МКН (Б8117-02.03.01)
+## 4 курс 8 семестр МКН (Б8117-02.03.01)
+### Методы параллельного программирования
+* Лабораторная 1. Интеграл [[**C++***]](https://github.com/JIeHb/Projects/blob/master/projects/mpi/lab_integral.cpp)
+## 4 курс 7 семестр МКН (Б8117-02.03.01)
 ### Большие данные. Шевченко Юрий Андреевич
 * Лабораторная 1. Python. Анимация из json файла [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/bigdata/lab1.py)
 * Лабораторная 2. Jupyter, pandas. Датасет REIGN [[**Jupyter notebook**]](https://github.com/JIeHb/Projects/blob/master/projects/bigdata/lab2_REIGN.ipynb)
 * Лабораторная 3. R. Датасет titanic [[**R**]](https://github.com/JIeHb/Projects/blob/master/projects/bigdata/lab3_titanic.R)
 * Лабораторная 4. Microsoft Power Bi. Олимпийские игры [[**Power Bi**]](https://drive.google.com/file/d/1CykDQGC09YO66Ge9O-JIgqPZlf-1rLMF/view?usp=sharing)
-## 3 курс 2 семестр МКН (Б8117-02.03.01)
+## 3 курс 6 семестр МКН (Б8117-02.03.01)
 ### Криптография. Селезнев Тим Эдуардович
 * Алгоритм шифрования RSA [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/cryptography/RSA.py)
 * Протокол Диффи — Хеллмана [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/cryptography/diffie-hellman.py)
@@ -12,7 +15,7 @@
 * Калькулятор [[**PyQt5**]](https://github.com/JIeHb/Projects/blob/master/projects/kovalenko/calculator/)
 * HTML Редактор [[**PyQt5**]](https://github.com/JIeHb/Projects/blob/master/projects/kovalenko/editor/)
 * Генератор чеков [[**PyQt5**]](https://github.com/JIeHb/Projects/blob/master/projects/kovalenko/receipt)
-## 3 курс 1 семестр МКН (Б8117-02.03.01)
+## 3 курс 5 семестр МКН (Б8117-02.03.01)
 ### Численные методы (практика). Кузнецова Наталья Владиславовна. [Рейтинг](https://docs.google.com/spreadsheets/d/1wdCW6W14ciO8Jp5YQtN2K-xAcelcF3VhZEJt9xijhlE)
 * Обусловленность матрицы от размерности и погрешности [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/matrix.py)
 * LU разложение матрицы, решение матрицы через LU разложение [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/num_methods_2.py) [[**Отчет**]](https://drive.google.com/open?id=1nCzr1b8Y9yQQ8E06GqPlwFmso5zlYRQ6)
@@ -26,7 +29,7 @@
 * Решение матрицы методом Ричардсона [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/nm_richard.py) [[**Отчет**]](https://drive.google.com/file/d/1q9b9Qb49cvCgo4LuVp1iZ1NuPCBNCCSG/view?usp=sharing)
 * Решение матрицы методом наискорейшего градиентного спуска [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/nm_grad.py) [[**Отчет**]](https://drive.google.com/file/d/1pPMmVbbUP3EU2_93W-mzUmoSTHYExs5a/view?usp=sharing)
 * Нахождение собственных значений матрицы методом вращений [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/nm_rotation_method.py) [[**Отчет**]](https://drive.google.com/file/d/1ysNNhY-sqIyR3hfjdQj4QQekNizMgJj9/view?usp=sharing)
-## 2 курс 2 семестр МКН (Б8202). 2019 год
+## 2 курс 4 семестр МКН (Б8202). 2019 год
 ### Численные методы (практика). Кузнецова Наталья Владиславовна. [Задания](https://drive.google.com/open?id=1nYDXP-O3bQwfiundHQBkMnAt3YQOGIK1) [Рейтинг](https://docs.google.com/spreadsheets/d/1wdCW6W14ciO8Jp5YQtN2K-xAcelcF3VhZEJt9xijhlE)
 * Лабораторная работа 2: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_2.py) [[**Отчет**]](https://drive.google.com/open?id=1VSAlhtenOduUsZvY_q2DHjBF68MW0qBA)
 * Лабораторная работа 3: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_3.py) [[**Отчет**]](https://drive.google.com/file/d/1_OqKYnT21lH5VRkjIPctHgv54DyXjatc/view?usp=sharing)
@@ -35,7 +38,7 @@
 * Лабораторная работа 6: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_6.py) [[**Отчет**]](https://drive.google.com/file/d/1Qdi_eg_vub9QbPamfQrFaqmBcQxazcUO/view?usp=sharing)
 * Лабораторная работа 7: [[**Python**]](https://github.com/JIeHb/Projects/blob/master/projects/numerical_analysis_lab_7.py) [[**Отчет**]](https://drive.google.com/file/d/13_37_WJrqbGVdGA5iDLZW7iJrw6s4kCw/view?usp=sharing)
 
-## 2 курс 1 семестр МКН (Б8202). 2018 год
+## 2 курс 3 семестр МКН (Б8202). 2018 год
 ### Языки и методы программирования. Спорышев Максим Сергеевич
 * Турнир 1. Задача A: PrimeNumberGenerator [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/PrimeNumberGenerator.cpp)
 * Турнир 1. Задача B: Date [[**C++**]](https://github.com/JIeHb/Projects/blob/master/projects/Date.cpp)
